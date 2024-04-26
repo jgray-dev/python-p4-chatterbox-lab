@@ -6,7 +6,7 @@ function EditMessage({ id, body, onUpdateMessage }) {
   function handleFormSubmit(e) {
     e.preventDefault();
 
-    fetch(`http://127.0.0.1:4000/messages/${id}`, {
+    fetch(`http://67.164.191.36:5000/messages/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
